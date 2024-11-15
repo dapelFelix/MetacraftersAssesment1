@@ -6,7 +6,7 @@ contract Assesment{
     mapping(address => bool) invited;
 
 
-    function NanbalParty(uint _password, uint _age) public  view returns(string memory){
+    function DapelParty(uint _password, uint _age) public  view returns(string memory){
         require(_age > 18, "Only adults Allowed");
         assert(_password == 1234);
         if(!invited[msg.sender] ){
